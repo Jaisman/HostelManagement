@@ -11,7 +11,7 @@ export default function Home() {
         if(!token){
           alert("No token found");
         }
-        const response = await fetch('http://localhost:4000/outpass-requests', {
+        const response = await fetch('https://hostel-manager001-ddy7z5v92-jaismans-projects.vercel.app/outpass-requests', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -34,7 +34,7 @@ export default function Home() {
   const handleApproval = async (id, status) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:4000/outpass/${id}`, {
+      const response = await fetch(`https://hostel-manager001-ddy7z5v92-jaismans-projects.vercel.app/outpass/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
