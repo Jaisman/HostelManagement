@@ -23,7 +23,7 @@ export default function Outpass() {
       if (!token) {
         throw new Error('User not authenticated');
       }
-      const response = await fetch('http://localhost:4000/outpass', {
+      const response = await fetch('https://hostel-management-backend-jaismans-projects.vercel.app/outpass', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

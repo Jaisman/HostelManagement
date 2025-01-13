@@ -7,7 +7,7 @@ export default function Gh2() {
   const token = localStorage.getItem('token');
 
   useEffect(() => {
-    fetch('http://localhost:4000/rooms',{
+    fetch('https://hostel-management-backend-jaismans-projects.vercel.app/rooms',{
       headers:{
         'Authorization': `Bearer ${token}`
       }
@@ -28,7 +28,7 @@ export default function Gh2() {
   const handleRoomClick = (roomNumber) => {
     const token = localStorage.getItem('token');
   
-    fetch('http://localhost:4000/book-room', {
+    fetch('https://hostel-management-backend-jaismans-projects.vercel.app/book-room', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

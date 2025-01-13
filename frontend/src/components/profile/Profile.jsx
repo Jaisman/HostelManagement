@@ -6,7 +6,7 @@ export default function Profile() {
   const [userData, setUserData] = useState(null);
   const [outpassRequests, setOutpassRequests] = useState([]);
   const [loading, setLoading] = useState(true);
-  const url = 'http://localhost:4000';
+  const url = 'https://hostel-management-backend-jaismans-projects.vercel.app';
 
   // Fetch user profile data
   useEffect(() => {
