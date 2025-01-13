@@ -1,0 +1,32 @@
+.fence-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 300px;
+      margin: auto;
+    }
+    
+    button {
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button.available {
+      background-color: green;
+      color: white;
+    }
+    
+    button.booked {
+      background-color: red;
+      color: white;
+      cursor: not-allowed;
+    }
+    
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
